@@ -1,4 +1,5 @@
-import 'package:example_shared_preferences/shared_preferences_widget.dart';
+import 'package:example_shared_preferences/dashboard.dart';
+import 'package:example_shared_preferences/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const LoginPage(),
+      routes: {
+        '/Dashboard': (context) => const Dashboard(),
+        '/loginscreen': (context) => const LoginPage(),
+      },
     );
   }
 }
-

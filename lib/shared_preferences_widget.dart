@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
                 onPressed: () async {
-                  var name = nameController.text.toString();
+                  
 
                   var prefs = await SharedPreferences.getInstance();
 
